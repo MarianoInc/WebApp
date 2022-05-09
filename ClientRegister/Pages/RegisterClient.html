@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/Controllers/InsertClient.js"></script>
+    <link rel="stylesheet" href="/Styles/register.css" />
+    <title>Client Register</title>
+  </head>
+  <body>
+    <div class="container border-radius">
+      <header class="border-radius">Client Register</header>
+      <ul class="lts-form">
+        <li>
+          <button id="log-out" class="border-radius btn-logout-style">
+            Logout
+          </button>
+        </li>
+      </ul>
+      <br />
+      <hr />
+      <main>
+        <section class="List border-radius margin">
+          <div>
+            <h1>Clients List.</h1>
+            <hr />
+            <div id="ClientList"></div>
+          </div>
+        </section>
+        <!-- ************************************************************ -->
+        <!-- >>>>>>>>>>>>>>>>>>>>>>    Lists    <<<<<<<<<<<<<<<<<<<<<<<<< -->
+        <!-- ************************************************************ -->
+
+        <section class="formulary border-radius margin">
+          <form>
+            <ul class="lts-crud" id="crud">
+              <li>
+                <button
+                  type="button"
+                  class="btn-crud-style border-radius"
+                  id="create"
+                >
+                  Create
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="btn-crud-style border-radius"
+                  id="update"
+                >
+                  Update
+                </button>
+              </li>
+              <li>
+                <button
+                  type="button"
+                  class="btn-crud-style border-radius"
+                  id="delete"
+                >
+                  Delete
+                </button>
+              </li>
+              <li>
+                <button type="button" id="btn-new-field" class="btn-crud-style border-radius">
+                  Add propertie.
+                </button>
+              </li>
+              <li>
+                <button type="button" id="btn-read-field" class="btn-crud-style border-radius">Load clients</button><br/>
+                <label>Show active clients?</label>
+                <input type="checkbox" name="StatusClients" id="statusclients" checked placeholder="cli">
+              </li>
+            </ul>
+            <hr />
+            <!-- ************************************************************ -->
+            <!-- >>>>>>>>>>>>>>>>>>>>>    Formulary    <<<<<<<<<<<<<<<<<<<<<< -->
+            <!-- ************************************************************ -->
+            <ul class="lts-form">
+              <li>
+                <input type="number" min="1" placeholder="ID" id="Id" class="input-crud" />
+              </li>
+              <li>
+                <input type="text" placeholder="FullName" id="FullName" class="input-crud" required/>
+              </li>
+              <li>
+                <input
+                  type="text"
+                  maxlength="8"
+                  minlength="8"
+                  id="DNI"
+                  placeholder="DNI"
+                  class="input-crud"
+                  required
+                />
+              </li>
+              <li>
+                <input
+                  type="number"
+                  max="120"
+                  min="0"
+                  id="Age"
+                  placeholder="Age"
+                  class="input-crud"
+                  required
+                />
+              </li>
+              <li>
+                <select
+                  title="Gender_title"
+                  name="gender"
+                  id="Gender"
+                  class="input-crud"
+                >
+                  <option value="MASCULINO">Masculino</option>
+                  <option value="FEMENINO">Femenino</option>
+                </select>
+              </li>
+              <li>
+                <label>Client state? (only to modify)</label>
+                <input
+                  placeholder="Client State"
+                  type="checkbox"
+                  name="isActive"
+                  id="IsActive"
+                />
+              </li>
+              <li>
+                <label>Driver license?</label>
+                <input
+                  placeholder="Driver license"
+                  type="checkbox"
+                  name="driverLicense"
+                  id="DriverLicense"
+                />
+              </li>
+              <li>
+                <label>Use glasses?</label>
+                <input
+                  placeholder="Use glasses"
+                  type="checkbox"
+                  name="useGlasses"
+                  id="UseGlasses"
+                />
+              </li>
+              <li>
+                <label>Is diabetic?</label>
+                <input
+                  placeholder="Is diabetic"
+                  type="checkbox"
+                  name="isDiabetic"
+                  id="IsDiabetic"
+                />
+              </li>
+
+              <li>
+                <label>Any other disease?</label>
+                <input
+                  placeholder="Any other disease"
+                  type="checkbox"
+                  name="otherDisease"
+                  id="OtherDisease"
+                />
+              </li>
+              <li>
+                <input
+                  placeholder="Which one"
+                  type="text"
+                  name="wichOne"
+                  id="Disease"
+                  class="input-crud"
+                />
+              </li>
+              <li>
+                <input
+                  type="text"
+                  placeholder="Special attribute key"
+                  id="key"
+                  class="input-crud"
+                />
+              </li>
+              <li>
+                <input
+                  type="text"
+                  placeholder="Special attribute value"
+                  id="value"
+                  class="input-crud"
+                />
+              </li>
+              <li>
+                <div>Special attribute</div>
+                <div id="Special"></div>
+              </li>
+            </ul>
+          </form>
+          <div id="special-attibutes"></div>
+        </section>
+      </main>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </body>
+</html>
+<!-- 
+- Nombre completo
+- Identificación
+- Edad
+- Género
+- Estado (Activo o no)
+- ¿Maneja?
+- ¿Usa lentes?
+- ¿Diabético?
+- ¿Padece alguna otra enfermedad?
+- ¿Cuál?
+- Atributos adicionales
+-->

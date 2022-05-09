@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Styles/main.css" />
+    <link rel="stylesheet" href="/Controllers/Login.js" />
+    <link rel="stylesheet" href="/Controllers/InsertClient.js" />
+
+    <script src="/models/Propertie.js"></script>
+    <script src="/Controllers/Login.js"></script>
+    <title>Client Register</title>
+  </head>
+  <body>
+    <div class="container border-radius">
+      <header class="border-radius">Client Register</header>
+      <hr />
+      <main>
+        <form>
+          <ul>
+            <li>
+              <input
+                type="text"
+                placeholder="Username"
+                id="username"
+                class="border-radius input-login"
+                required
+                maxlength="80"
+              />
+            </li>
+            <li>
+              <input
+                type="text"
+                placeholder="Password"
+                id="Password"
+                class="border-radius input-login"
+                required
+                maxlength="20"
+              />
+            </li>
+            <li>
+              <button
+                type="button"
+                class="border-radius btn-login-style"
+                id="btn-login"
+              >
+                Login
+              </button>
+            </li>
+          </ul>
+        </form>
+      </main>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </body>
+</html>

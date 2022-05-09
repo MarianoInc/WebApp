@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: cornsilk;
+} 
+
+.container{
+    box-shadow: 0 0 8px black;
+    margin-top: 5%;
+    max-width: 80%;
+    background-color: burlywood;
+    margin: 5% auto auto;
+    min-height: 300px;
+}
+
+header{
+    text-align: center;
+    font-size: 2em;
+    padding: 20px;
+}
+
+main{
+    width: 100%;
+    overflow: auto;
+}
+
+h1{
+    text-align: center;
+    padding: 10px;
+}
+
+.lts-form{
+    list-style-type: none;
+    text-align: center;
+}
+
+.lts-crud{
+    list-style-type: none;
+}
+
+hr{
+    clear: both;
+}
+
+.border-radius{
+    border-radius: 10px;
+}
+
+.margin{
+    box-shadow: 0 0 8px black;
+    border: 1px solid black;
+    margin: 1%
+}
+
+/*Container for client list*/
+.List{
+    float: left;
+    max-width: 50%;
+    width: 50%;
+    box-sizing: 50%;
+}
+
+/*Container for crud operations and form*/
+.formulary{
+    float: right;
+    max-width: 60%;
+    box-sizing: 60%;
+}
+
+.clientList{
+    overflow: auto;
+    min-height: 100px;
+}
+
+.lts-crud li{
+    margin: 0.5%;
+    padding: 5px;
+    text-align: center;
+}
+.lts-form li{
+    margin: 0.1%;
+    padding: 5px;
+}
+
+.input-crud{
+    padding: 5px 40px;
+    text-align: center;
+    border: 0px;
+}
+
+.btn-crud-style{
+    max-width: 70%;
+    width: 70%;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    border: 0px;
+}
+
+.btn-logout-style{
+    max-width: 10%;
+    padding: 5px 20px;
+    font-size: 1.2em;
+    border: 0px;
+}
+
+.btn-logout-style:hover{
+    background-color: cadetblue;
+}
+
+.btn-crud-style:hover{
+    background-color: cadetblue;
+}
+
+.card{
+    padding: 1%;
+    margin: 2% auto 2%;
+    text-align: justify;
+    max-width: 40%;
+    box-sizing: 40%;
+    background-color: cornsilk;
+}
